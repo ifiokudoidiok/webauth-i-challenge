@@ -9,7 +9,7 @@ server.use(express.json());
 server.get('/', logger, (req, res) => {
     res.send('<h1>Lets Get this party started!<h1><p> navigate to /api/users to begin</p>')
     })
-server.use('/api/users', logger, userRouter);
+server.use('/api', logger, userRouter);
 
 
 
